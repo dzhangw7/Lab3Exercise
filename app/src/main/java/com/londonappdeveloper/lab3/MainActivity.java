@@ -82,4 +82,12 @@ public class MainActivity extends AppCompatActivity {
         addResult.setText(Double.toString(sum));
         return sum;
     }
+    
+    public double Sub(double num11, double num2) {
+        num1 = Double.parseDouble(firstNumber.getText().toString());
+        num2 = Double.parseDouble(secondNumber.getText().toString());
+        sum = num1 - num2;
+        addResult.setText(Double.toString(sum));
+        return sum;
+    }
 }
