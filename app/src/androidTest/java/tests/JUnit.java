@@ -18,8 +18,14 @@ public class JUnit extends ActivityInstrumentationTestCase2<MainActivity> {
     public void test_add() {
         mainActivity = getActivity();
 
-        //double add = mainActivity.Add(1.7, 3.8);
-        assertEquals(14, 7+7);
+        assertEquals(6.5, mainActivity.Add(1.7, 3.8));
+        //assertEquals(14, 7+7);
+    }
+    
+    public void test_sub() {
+        mainActivity = getActivity();
+        
+        assert Equals(3.0, mainActivity.Sub(6.0, 3.0));
     }
 
 }
