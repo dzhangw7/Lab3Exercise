@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         return sum;
     }
     
-    public double Sub(double num11, double num2) {
+    public double Sub(double num1, double num2) {
         num1 = Double.parseDouble(firstNumber.getText().toString());
         num2 = Double.parseDouble(secondNumber.getText().toString());
         sum = num1 - num2;
