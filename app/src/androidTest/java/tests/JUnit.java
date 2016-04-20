@@ -25,7 +25,7 @@ public class JUnit extends ActivityInstrumentationTestCase2<MainActivity> {
     public void test_sub() {
         mainActivity = getActivity();
         
-        assert Equals(3.0, mainActivity.Sub(6.0, 3.0));
+        assertEquals(3.0, mainActivity.Sub(6.0, 3.0));
     }
 
 }
