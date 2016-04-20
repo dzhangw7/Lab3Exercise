@@ -22,6 +22,16 @@ public class JUnit extends ActivityInstrumentationTestCase2<MainActivity> {
         //assertEquals(14, 7+7);
     }
     
+    public void test_Adder() {
+        mainActivity = getActivity();
+
+        double first = Double.parseDouble(firstNumber.getText().toString());
+        double second = Double.parseDouble(secondNumber.getText().toString());
+        double testSum = Double.parseDouble(addResult.getText().toString());
+
+        assertEquals(testSum, first + second);
+    }
+    
     public void test_sub() {
         mainActivity = getActivity();
         
